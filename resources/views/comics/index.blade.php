@@ -14,6 +14,9 @@
             </div>
         @endforeach
         </div>
+        <a href="{{ route('comics.create') }}">
+            <button class="new-comics">Aggiungi nuovo Fumetto</div>
+        </a>
     </div>
     <div class="blue-section">
         <div class="blue-container">

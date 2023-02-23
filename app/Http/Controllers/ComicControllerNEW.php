@@ -27,7 +27,7 @@ class ComicControllerNEW extends Controller
      */
     public function create()
     {
-        //
+        return view('comics.create');
     }
 
     /**

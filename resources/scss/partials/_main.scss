@@ -4,6 +4,7 @@
 .main-container {
     @include borderPage;
     padding: 20px 0;
+    text-align: center;
 }
 
 .blue-container {
@@ -38,6 +39,16 @@ main {
         text-decoration: none;
         color: white;
     }
+}
+
+.new-comics {
+    background-color: $DCblue;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid $DCblue;
+    margin: 20px 0;
+    cursor: pointer;
 }
 
 .blue-section {
