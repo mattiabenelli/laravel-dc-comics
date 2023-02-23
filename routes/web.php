@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\controllers\PageController as PageController;
-use App\Http\controllers\ComicController as ComicController;
+use App\Http\controllers\ComicControllerNEW as ComicControllerNEW;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ Route::get('/', [PageController::class, 'index'])->name('homepage');
     
 //     return view('products', compact('comics', 'itemBlueSection'));
 // })->name('products');
-Route::get('/prodotti', [ComicController::class, 'index'])->name('products');
+// // //Route::get('/prodotti', [ComicController::class, 'index'])->name('products'); 2 MODO CON CONTROLLER
 
 // Route::get('/prodotti/{id}', function($id){
 //     $comics = config('comics.fumetti');
@@ -45,4 +45,7 @@ Route::get('/prodotti', [ComicController::class, 'index'])->name('products');
 
 // })->name('detail-comics');
 
-Route::get('/prodotti/{id}', [ComicController::class, 'single'])->name('detail-comics');
+// // //Route::get('/prodotti/{id}', [ComicController::class, 'single'])->name('detail-comics'); 2 MODO CON CONTROLLER
+
+Route::resource('comics', ComicControllerNEW::class);
+

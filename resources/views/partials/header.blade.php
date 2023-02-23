@@ -8,8 +8,8 @@
           <li>
             <a>CHARACTERS</a>
           </li>
-          <li class="{{ Route::currentRouteName() == 'products' ? 'active' : '' }}">
-            <a href="{{ route('products') }}">COMICS</a>
+          <li class="{{ Route::currentRouteName() == 'comics.index' ? 'active' : '' }}">
+            <a href="{{ route('comics.index') }}">COMICS</a>
           </li>
           <li>
             <a>MOVIES</a>
