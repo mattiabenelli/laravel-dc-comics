@@ -22,7 +22,6 @@
             <div class="form-element">
                 <label>Prezzo</label>
                 <input type="text" name="prezzo" placeholder="Inserisci il prezzo">
-    
             </div>
 
             <div class="form-element">

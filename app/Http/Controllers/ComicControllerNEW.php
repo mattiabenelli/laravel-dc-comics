@@ -38,7 +38,8 @@ class ComicControllerNEW extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $form_data = $request->all();
+        dd($form_data);
     }
 
     /**
