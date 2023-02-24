@@ -10,7 +10,10 @@
                         <img src="{{$comic['thumb']}}" alt="">
                     </a>
                 </div>
-                <a href="" class="card-name">{{$comic['title']}}</a>
+                <a href="{{ route('comics.show', ['comic' => $comic['id']] ) }}" class="card-name">{{$comic['title']}}</a>
+                <a href="{{ route('comics.edit', ['comic' => $comic['id']] ) }}">
+                    <button class="edit-comic">Modifica il fumetto</button>
+                </a>
             </div>
         @endforeach
         </div>
