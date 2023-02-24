@@ -51,6 +51,28 @@ main {
     cursor: pointer;
 }
 
+.button-homepage {
+    border: 1px solid $DCblue;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.homepage-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.row-homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
 .blue-section {
     background-color: $DCblue;
     padding: 40px 0;

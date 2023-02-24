@@ -5,35 +5,11 @@
       </a>
       <nav>
         <ul>
-          <li>
-            <a>CHARACTERS</a>
+          <li class="{{ Route::currentRouteName() == 'homepage' ? 'active' : '' }}">
+            <a href="{{ route('homepage') }}">HOMEPAGE</a>
           </li>
           <li class="{{ Route::currentRouteName() == 'comics.index' ? 'active' : '' }}">
             <a href="{{ route('comics.index') }}">COMICS</a>
-          </li>
-          <li>
-            <a>MOVIES</a>
-          </li>
-          <li>
-            <a>TV</a>
-          </li>
-          <li>
-            <a>GAMES</a>
-          </li>
-          <li>
-            <a>COLLECTIBLES</a>
-          </li>
-          <li>
-            <a>VIDEOS</a>
-          </li>
-          <li>
-            <a>FANS</a>
-          </li>
-          <li>
-            <a>NEWS</a>
-          </li>
-          <li>
-            <a>SHOP</a>
           </li>                
         </ul>
       </nav>
