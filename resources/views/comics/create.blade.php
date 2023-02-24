@@ -11,7 +11,7 @@
 
             <div class="form-element">
                 <label>Descrizione</label>
-                <input type="text" name="description" placeholder="Inserisci la descrizione">
+                <textarea rows="10" type="text" name="description" placeholder="Inserisci la descrizione"></textarea>
             </div>
 
             <div class="form-element">

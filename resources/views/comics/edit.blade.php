@@ -4,7 +4,7 @@
      <div class="form-container">
         <form action="{{ route('comics.update', $comic->id) }}" method="POST">
             @csrf
-            
+            @method('PUT')            
             <div class="form-element">
                 <label>Titolo</label>
                 <input value="{{ old('title') ?? $comic->title }}" type="text" name="title" placeholder="Inserisci il titolo">
@@ -12,7 +12,7 @@
 
             <div class="form-element">
                 <label>Descrizione</label>
-                <textarea value="{{ old('description') ?? $comic->description }}" type="text" name="description" placeholder="Inserisci la descrizione">
+                <textarea rows="10" name="description" placeholder="Inserisci la descrizione">{{ old('description') ?? $comic->description }}</textarea>
             </div>
 
             <div class="form-element">
@@ -40,7 +40,7 @@
                 <input value="{{ old('type') ?? $comic->type }}" type="text" name="type" placeholder="Inserisci la tipo">
             </div>
 
-            <button type="submit">Crea nuovo fumetto</button>
+            <button type="submit">Modifica il fumetto</button>
         </form>
      </div>
 @endsection
