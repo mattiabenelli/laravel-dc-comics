@@ -11,9 +11,16 @@
                     </a>
                 </div>
                 <a href="{{ route('comics.show', ['comic' => $comic['id']] ) }}" class="card-name">{{$comic['title']}}</a>
-                <a href="{{ route('comics.edit', ['comic' => $comic['id']] ) }}">
-                    <button class="edit-comic">Modifica il fumetto</button>
-                </a>
+                <div class="card-buttons">
+                    <a href="{{ route('comics.edit', ['comic' => $comic['id']] ) }}">
+                        <button class="edit-comic">Modifica il fumetto</button>
+                    </a>
+                    <form action="{{ route('comics.destroy', ['comic' => $comic['id']] ) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="destroy-comic"><i class="fa-solid fa-trash"></i></button>
+                    </form>
+                </div>
             </div>
         @endforeach
         </div>
