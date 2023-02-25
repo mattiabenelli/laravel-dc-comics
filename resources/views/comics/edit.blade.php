@@ -32,7 +32,7 @@
             
             <div class="form-element">
                 <label>Data d'uscita</label>
-                <input value="{{ old('sale_date') ?? $comic->sale_date }}" type="text" name="sale_date" placeholder="Inserisci la data d'uscita">
+                <input value="{{ old('sale_date') ?? $comic->sale_date }}" type="date" name="sale_date" placeholder="Inserisci la data d'uscita">
             </div>
 
             <div class="form-element">

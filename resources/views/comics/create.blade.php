@@ -31,7 +31,7 @@
             
             <div class="form-element">
                 <label>Data d'uscita</label>
-                <input type="text" name="sale_date" placeholder="Inserisci la data d'uscita">
+                <input type="date" name="sale_date" placeholder="Inserisci la data d'uscita">
             </div>
 
             <div class="form-element">
